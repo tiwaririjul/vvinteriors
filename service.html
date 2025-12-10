@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Analytics 4 (GA4) - Enhanced Page Tracking -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5HTM90V3VT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      // Function to identify page type
+      function getPageType() {
+        const path = window.location.pathname;
+        if (path === '/' || path.includes('index')) return 'Home';
+        if (path.includes('about')) return 'About';
+        if (path.includes('service')) return 'Service';
+        if (path.includes('project')) return 'Project';
+        if (path.includes('contact')) return 'Contact';
+        if (path.includes('interior-designer-')) return 'Location Page';
+        if (path.includes('blog')) return 'Blog';
+        return 'Other';
+      }
+
+      // Function to identify page category
+      function getPageCategory() {
+        const path = window.location.pathname;
+        if (path.includes('interior-designer-')) return 'Location SEO';
+        if (path === '/' || path.includes('index')) return 'Main';
+        return 'Content';
+      }
+
+      // Enhanced GA4 Configuration with Page-Specific Tracking
+      gtag('config', 'G-5HTM90V3VT', {
+        // Basic settings
+        'send_page_view': true,
+        'anonymize_ip': true, // Privacy compliance
+        'cookie_flags': 'SameSite=None;Secure',
+        
+        // Page information
+        'page_title': document.title,
+        'page_location': window.location.href,
+        'page_path': window.location.pathname,
+        
+        // Custom parameters for each page
+        'page_type': getPageType(),
+        'page_category': getPageCategory(),
+        
+        // SEO-friendly settings
+        'allow_google_signals': true,
+        'allow_ad_personalization_signals': true,
+        
+        // Performance
+        'transport_type': 'beacon'
+      });
+
+      // Enhanced page view event with custom data
+      gtag('event', 'page_view', {
+        'page_title': document.title,
+        'page_location': window.location.href,
+        'page_path': window.location.pathname,
+        'page_type': getPageType(),
+        'page_category': getPageCategory(),
+        'engagement_time_msec': 0
+      });
+    </script>
+    
+    <meta charset="utf-8" />
+    <title>Our Services - VV Interiors | VV Infra | vvinteriorsandinfraprojects | Interior Design, Construction & Plywood Furniture | Bhayander Mumbai | 15+ Years Experience</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="interior design services mumbai, construction company mumbai, plywood furniture services bhayander, home interior design, office interior design, custom furniture mumbai, modular kitchen design, electrical work mumbai, civil work mumbai, renovation mumbai, construction mumbai, bedroom design, living room design, commercial interior design, residential interior design, 15 years experience interior designer, kitchen renovation, bathroom design, gym interior design, godown interior design, vvinteriorsandinfraprojects, VV Interiors services, VV Infra services, V.V Interiors Mumbai" name="keywords" />
+    <meta content="VV Interiors (also known as VV Infra or vvinteriorsandinfraprojects) services - Mumbai's leading interior design, construction & plywood furniture company in Bhayander with 15+ years experience. Complete interior design, construction, electrical work, civil work, renovation services for homes, offices, gyms. Expert plywood furniture services including custom beds, sofas, tables, chairs & wooden furniture. Serving all over Mumbai." name="description" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://vvinteriorsandinfraprojects.com/service.html" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Our Services - VV Interiors | VV Infra | vvinteriorsandinfraprojects | Interior Design Mumbai" />
+    <meta property="og:description" content="Mumbai's leading interior design, construction & plywood furniture company with 15+ years experience. Complete interior design, construction, electrical work, civil work, renovation services." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vvinteriorsandinfraprojects.com/service.html" />
+    <meta property="og:image" content="https://vvinteriorsandinfraprojects.com/img/vvinterior/logo-final.png" />
+    <meta property="og:site_name" content="vvinteriorsandinfraprojects" />
+
+    <!-- Favicon -->
+    <link href="img/interior.png" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    
+    <style>
+      /* Navbar Logo Styling - Responsive */
+      .navbar-logo {
+        height: 100px; /* Desktop */
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+      }
+
+      .navbar-logo:hover {
+        transform: scale(1.05);
+      }
+
+      .navbar-brand {
+        padding: 0.5rem 1rem;
+      }
+
+      @media (max-width: 992px) {
+        .navbar-logo {
+          height: 70px; /* Tablet/Small Desktop */
+        }
+      }
+
+      @media (max-width: 768px) {
+        .navbar-logo {
+          height: 60px; /* Tablet */
+        }
+      }
+
+      @media (max-width: 576px) {
+        .navbar-logo {
+          height: 50px; /* Mobile */
+        }
+      }
+    </style>
+    
+    <!-- Structured Data for Services SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "vvinteriorsandinfraprojects Services",
+      "alternateName": [
+        "VV Interiors Services",
+        "VV Infra Services",
+        "V.V Interiors Services"
+      ],
+      "description": "Mumbai's leading interior design, construction & plywood furniture services in Bhayander with 15+ years experience. Complete interior design, construction, electrical work, civil work, renovation services for homes, offices, gyms. Expert plywood furniture services including custom beds, sofas, tables, chairs & wooden furniture.",
+      "provider": {
+        "@type": "Organization",
+        "name": "vvinteriorsandinfraprojects",
+        "alternateName": [
+          "VV Interiors",
+          "VV Infra",
+          "V.V Interiors",
+          "VV Interiors Mumbai",
+          "VV Infra Projects"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "TEMPLE, Shop No: 6, Paras Plaza, CHS, Golden Nest, Near Saibaba Galli",
+          "addressLocality": "Bhayander(E)",
+          "addressRegion": "Maharashtra",
+          "postalCode": "401105",
+          "addressCountry": "IN"
+        },
+        "telephone": "+91-7977422729",
+        "email": "tiwaririjul13@gmail.com"
+      },
+      "areaServed": "Mumbai, Maharashtra, India",
+      "serviceType": [
+        "Interior Design Services",
+        "Construction",
+        "Plywood Furniture Manufacturing",
+        "Electrical Work",
+        "Civil Work",
+        "Renovation",
+        "Custom Furniture Design",
+        "Modular Kitchen Design",
+        "Home Renovation",
+        "Office Interior Design",
+        "Commercial Interior Design",
+        "Residential Interior Design"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Residential Interior Design",
+            "description": "Complete interior design for homes, flats, and bungalows across Mumbai"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Commercial Interior Design",
+            "description": "Professional office, gym, godown, and commercial space interior design"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Custom Plywood Furniture",
+            "description": "Handcrafted beds, sofas, wardrobes, and all wooden furniture"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Modular Kitchen Design",
+            "description": "Modern kitchen design and renovation services"
+          }
+        }
+      ]
+    }
+    </script>
+  </head>
+
+  <body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark py-3">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center">
+              <a class="text-white pr-3" href="">FAQs</a>
+              <span class="text-white">|</span>
+              <a class="text-white px-3" href="">Help</a>
+              <span class="text-white">|</span>
+              <a class="text-white pl-3" href="">Support</a>
+            </div>
+          </div> -->
+          <div class="col-md-6 text-center text-lg-right">
+            <div class="d-inline-flex align-items-center">
+              <a class="text-white px-3" href="">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a class="text-white px-3" href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a class="text-white px-3" href="">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a class="text-white px-3" href="">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a class="text-white pl-3" href="">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+      <div class="container position-relative" style="z-index: 9">
+        <nav
+          class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5"
+        >
+          <a href="index.html" class="navbar-brand">
+            <img src="img/vvinterior/logo-final.png" alt="vvinteriorsandinfraprojects - Interior Designer Mumbai" class="navbar-logo">
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between px-3"
+            id="navbarCollapse"
+          >
+            <div class="navbar-nav ml-auto py-0">
+              <a href="index.html" class="nav-item nav-link">Home</a>
+              <a href="about.html" class="nav-item nav-link">About</a>
+              <a href="service.html" class="nav-item nav-link active"
+                >Service</a
+              >
+              <a href="project.html" class="nav-item nav-link">Project</a>
+              <!-- <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  >Pages</a
+                >
+                <div class="dropdown-menu rounded-0 m-0">
+                  <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                  <a href="single.html" class="dropdown-item">Blog Detail</a>
+                </div>
+              </div> -->
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Under Nav Start -->
+    <div class="container-fluid bg-white py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 text-left mb-3 mb-lg-0">
+            <div class="d-inline-flex text-left">
+              <h1
+                class="flaticon-office font-weight-normal text-primary m-0 mr-3"
+              ></h1>
+              <div class="d-flex flex-column">
+                <h5>Our Office</h5>
+                <p class="m-0">Golden Nest, Bhayander(E)</p>
+                <small class="text-muted">Serving All Over Mumbai</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-left text-lg-center mb-3 mb-lg-0">
+            <div class="d-inline-flex text-left">
+              <h1
+                class="flaticon-email font-weight-normal text-primary m-0 mr-3"
+              ></h1>
+              <div class="d-flex flex-column">
+                <h5>Email Us</h5>
+                <p class="m-0">tiwaririjul13@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-left text-lg-right mb-3 mb-lg-0">
+            <div class="d-inline-flex text-left">
+              <h1
+                class="flaticon-telephone font-weight-normal text-primary m-0 mr-3"
+              ></h1>
+              <div class="d-flex flex-column">
+                <h5>Call Us</h5>
+                <p class="m-0">+91 7977422729</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Under Nav End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-secondary py-5">
+      <div class="container py-5">
+        <div class="row align-items-center py-4">
+          <div class="col-md-6 text-center text-md-left">
+            <h2 class="mb-4 mb-md-0 text-primary text-uppercase">
+              Our Services
+            </h2>
+          </div>
+          <div class="col-md-6 text-center text-md-right">
+            <div class="d-inline-flex align-items-center">
+              <a class="btn btn-outline-primary" href="index.html">Home</a>
+              <i class="fas fa-angle-double-right text-primary mx-2"></i>
+              <a class="btn btn-outline-primary disabled" href=""
+                >Our Services</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Header Start -->
+
+    <!-- Services Start -->
+    <div class="container-fluid bg-light" style="padding: 60px 0">
+      <div class="container">
+        <div class="row">
+          <!-- Left Side: Experience Box -->
+          <div class="col-lg-5">
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: #dfb163;
+                height: 100%;
+                padding: 50px 30px;
+                color: white;
+              "
+            >
+              <i
+                class="flaticon-brickwall"
+                style="
+                  font-size: 60px;
+                  font-weight: normal;
+                  color: #dfb163;
+                  margin-bottom: 20px;
+                "
+              ></i>
+              <h4 style="font-size: 60px; margin-bottom: 20px">15+</h4>
+              <h1 style="margin: 0; font-size: 28px">Years Experience</h1>
+              <p style="margin: 10px 0 0 0; font-size: 16px; opacity: 0.9">Trusted by 500+ Clients</p>
+            </div>
+          </div>
+
+          <!-- Right Side: About Content -->
+          <div class="col-lg-7" style="padding: 50px 30px">
+            <h6
+              style="
+                font-weight: normal;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+              "
+            >
+              Learn About Us
+            </h6>
+            <h1 style="margin-bottom: 30px">
+              Mumbai's #1 Interior Design, Construction & Plywood Furniture Services | 15+ Years Excellence
+            </h1>
+            <p style="font-size: 1.05rem; line-height: 1.7;">
+              <strong>vvinteriorsandinfraprojects</strong> is Mumbai's trusted interior design, construction, and plywood furniture company with <strong>15+ years of experience</strong> and <strong>500+ successful projects</strong>. Based in Bhayander(E), we serve all Mumbai areas - transforming homes, offices, gyms, kitchens, and every space with complete interior design, construction, electrical work, civil work, renovation, and custom plywood furniture under one roof.
+            </p>
+
+            <!-- Icons List -->
+            <div class="row" style="padding-top: 20px">
+              <div class="col-sm-6">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                  "
+                >
+                  <i
+                    class="flaticon-house"
+                    style="font-size: 28px; color: #dfb163; margin-right: 15px"
+                  ></i>
+                  <h5 style="margin: 0">Residential Interior Design</h5>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                  "
+                >
+                  <i
+                    class="flaticon-office"
+                    style="font-size: 28px; color: #dfb163; margin-right: 15px"
+                  ></i>
+                  <h5 style="margin: 0">Commercial Interior Design</h5>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                  "
+                >
+                  <i
+                    class="flaticon-living-room"
+                    style="font-size: 28px; color: #dfb163; margin-right: 15px"
+                  ></i>
+                  <h5 style="margin: 0">Custom Plywood Furniture</h5>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                  "
+                >
+                  <i
+                    class="flaticon-stairs"
+                    style="font-size: 28px; color: #dfb163; margin-right: 15px"
+                  ></i>
+                  <h5 style="margin: 0">Modular Kitchen Design</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Awesome Services Section -->
+    <div class="container-fluid" style="padding: 60px 0">
+      <div class="container">
+        <div class="row">
+          <!-- Left Column: Text -->
+          <div class="col-lg-6" style="padding-right: 30px">
+            <h6
+              style="
+                color: #dfb163;
+                font-weight: normal;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+              "
+            >
+              Our Awesome Services
+            </h6>
+            <h1 style="margin-bottom: 30px">
+              Complete Interior Design, Construction & Plywood Furniture Services | All Over Mumbai
+            </h1>
+            <p style="font-size: 1.05rem; line-height: 1.7;">
+              With <strong>15+ years of experience</strong>, vvinteriorsandinfraprojects offers complete interior design, construction, electrical work, civil work, renovation, and plywood furniture solutions across Mumbai. We serve residential, commercial, and specialized projects with innovative designs, quality construction, and premium craftsmanship.
+            </p>
+            <a
+              href="contact.html"
+              style="
+                display: inline-block;
+                background-color: #dfb163;
+                color: white;
+                padding: 10px 25px;
+                text-decoration: none;
+                border-radius: 4px;
+                margin-top: 15px;
+              "
+            >
+              View More
+            </a>
+          </div>
+
+          <!-- Right Column: Carousel Cards -->
+          <div class="col-lg-6 pt-5 pt-lg-0">
+            <div
+              class="owl-carousel service-carousel"
+              style="position: relative; padding-left: 10px"
+            >
+              <!-- Service 1: Residential Interior Design -->
+              <div
+                style="
+                  background-color: #f8f9fa;
+                  padding: 30px;
+                  margin: 10px;
+                  text-align: center;
+                  border-radius: 8px;
+                "
+              >
+                <h5 style="margin-bottom: 15px">Residential Interior Design</h5>
+                <p style="margin: 0">
+                  Transform your home, flat, or bungalow with our expert interior design services. 
+                  We create beautiful, functional spaces that reflect your lifestyle and personality 
+                  with 15+ years of proven expertise.
+                </p>
+              </div>
+
+              <!-- Service 2: Commercial Interior Design -->
+              <div
+                style="
+                  background-color: #f8f9fa;
+                  padding: 30px;
+                  margin: 10px;
+                  text-align: center;
+                  border-radius: 8px;
+                "
+              >
+                <h5 style="margin-bottom: 15px">Commercial Interior Design</h5>
+                <p style="margin: 0">
+                  Professional office, gym, godown, and commercial space interior design. 
+                  We create productive, inspiring work environments that enhance business 
+                  efficiency and employee satisfaction across Mumbai.
+                </p>
+              </div>
+
+              <!-- Service 3: Custom Plywood Furniture -->
+              <div
+                style="
+                  background-color: #f8f9fa;
+                  padding: 30px;
+                  margin: 10px;
+                  text-align: center;
+                  border-radius: 8px;
+                "
+              >
+                <h5 style="margin-bottom: 15px">Custom Plywood Furniture</h5>
+                <p style="margin: 0">
+                  Handcrafted plywood beds, sofas, wardrobes, and all wooden furniture 
+                  designed to your specifications. Our expert craftsmen create durable, 
+                  stylish furniture that perfectly fits your space and budget.
+                </p>
+              </div>
+
+              <!-- Service 4: Modular Kitchen Design -->
+              <div
+                style="
+                  background-color: #f8f9fa;
+                  padding: 30px;
+                  margin: 10px;
+                  text-align: center;
+                  border-radius: 8px;
+                "
+              >
+                <h5 style="margin-bottom: 15px">Modular Kitchen Design</h5>
+                <p style="margin: 0">
+                  Modern modular kitchens with smart storage solutions. We design functional, 
+                  beautiful kitchens that make cooking a pleasure while maximizing your space 
+                  efficiently with premium plywood materials.
+                </p>
+              </div>
+
+              <!-- Service 5: Complete Renovation -->
+              <div
+                style="
+                  background-color: #f8f9fa;
+                  padding: 30px;
+                  margin: 10px;
+                  text-align: center;
+                  border-radius: 8px;
+                "
+              >
+                <h5 style="margin-bottom: 15px">Complete Renovation Services</h5>
+                <p style="margin: 0">
+                  End-to-end home and office renovation services. From concept to completion, 
+                  we handle everything including interior design, custom furniture, and 
+                  complete space transformation across Mumbai.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services End -->
+
+    <!-- Features Start -->
+    <div class="container-fluid bg-light">
+      <div class="container">
+        <div class="row">
+          <!-- Text Content -->
+          <div class="col-lg-7 mt-5 py-5 pr-lg-5">
+            <h6 class="text-primary font-weight-normal text-uppercase mb-3">
+              Why Choose vvinteriorsandinfraprojects?
+            </h6>
+            <h2 class="mb-4 section-title">
+              15+ Years Of Expertise In Interior Design, Construction & Plywood Furniture Manufacturing
+            </h2>
+            <p class="mb-4" style="font-size: 1.05rem; line-height: 1.7;">
+              With <strong>15+ years of proven expertise</strong> and <strong>500+ successful projects</strong>, vvinteriorsandinfraprojects delivers complete interior design, construction, electrical work, civil work, renovation, and custom plywood furniture solutions across Mumbai. From modular kitchens to office spaces, we create stylish, functional designs for homes, offices, gyms, and all spaces in Bhayander, Malad, Borivali, Andheri, Bandra, and beyond.
+            </p>
+
+            <ul class="list-inline mb-4">
+              <li class="mb-3">
+                <h5 style="font-size: 1.1rem;">
+                  <i class="far fa-check-square text-primary mr-3"></i><strong>15+ Years Expertise</strong> - 500+ Interior & Construction Projects
+                </h5>
+              </li>
+              <li class="mb-3">
+                <h5 style="font-size: 1.1rem;">
+                  <i class="far fa-check-square text-primary mr-3"></i><strong>Complete Solutions</strong> - Design, Construction & Plywood Furniture
+                </h5>
+              </li>
+              <li class="mb-3">
+                <h5 style="font-size: 1.1rem;">
+                  <i class="far fa-check-square text-primary mr-3"></i><strong>All Over Mumbai</strong> - Bhayander to South Mumbai
+                </h5>
+              </li>
+              <li class="mb-3">
+                <h5 style="font-size: 1.1rem;">
+                  <i class="far fa-check-square text-primary mr-3"></i><strong>Premium Quality</strong> - 100% Satisfaction Guaranteed
+                </h5>
+              </li>
+              <li class="mb-3">
+                <h5 style="font-size: 1.1rem;">
+                  <i class="far fa-check-square text-primary mr-3"></i><strong>Budget-Friendly</strong> - Transparent Pricing & On-Time Delivery
+                </h5>
+              </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-primary mt-3 py-2 px-4">Discover More</a>
+          </div>
+
+          <!-- Image Content -->
+          <div class="col-lg-5">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center h-100 overflow-hidden"
+            >
+              <img
+                class="img-fluid h-100 rounded shadow"
+                src="img/vvinterior/vv7.webp"
+                alt="Expert Interior Design Services Mumbai - V.V Interiors Modern Living Space | Complete Interior Solutions Bhayander"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center h-100 overflow-hidden"
+            >
+              <img class="h-100" src="img/testimonial.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-md-7 py-5 pl-md-5">
+            <h6
+              class="text-primary font-weight-normal text-uppercase mb-3 pt-5"
+            >
+              Testimonial
+            </h6>
+            <h2 class="mb-4 section-title">What Our Clients Say</h2>
+            <div
+              class="owl-carousel testimonial-carousel position-relative pb-5 mb-md-5"
+            >
+              <div class="d-flex flex-column">
+                <div class="d-flex align-items-center mb-3">
+                  <!-- <img
+                    class="img-fluid rounded-circle"
+                    src="img/testimonial-1.jpg"
+                    style="width: 60px; height: 60px"
+                    alt=""
+                  /> -->
+                  <div class="ml-3">
+                    <h5>Rahul Mehta</h5>
+                    <i>Homeowner, Andheri West, Mumbai</i>
+                  </div>
+                </div>
+                <p>
+                  V.V Interiors transformed our 2BHK flat into a beautiful home. Their team designed our modular kitchen and custom plywood furniture perfectly. The quality of work is exceptional and they completed the project on time. Highly recommended for interior design and furniture work in Mumbai!
+                </p>
+              </div>
+              <div class="d-flex flex-column">
+                <div class="d-flex align-items-center mb-3">
+                  <!-- <img
+                    class="img-fluid rounded-circle"
+                    src="img/testimonial-2.jpg"
+                    style="width: 60px; height: 60px"
+                    alt=""
+                  /> -->
+                  <div class="ml-3">
+                    <h5>Sneha Agarwal</h5>
+                    <i>Business Owner, Bandra West, Mumbai</i>
+                  </div>
+                </div>
+                <p class="m-0">
+                  We hired V.V Interiors for our office renovation and custom furniture. Their expertise in both interior design and plywood furniture manufacturing saved us time and money. The office looks professional and the custom desks and storage solutions are exactly what we needed. Excellent service!
+                </p>
+              </div>
+              <!-- New testimonial 1 -->
+              <div class="d-flex flex-column">
+                <div class="d-flex align-items-center mb-3">
+                  <!-- <img
+                    class="img-fluid rounded-circle"
+                    src="img/testimonial-3.jpg"
+                    style="width: 60px; height: 60px"
+                    alt=""
+                  /> -->
+                  <div class="ml-3">
+                    <h5>Puneet Pandey</h5>
+                    <i>Homeowner</i>
+                  </div>
+                </div>
+                <p>
+                  V.V Interiors transformed our living space beautifully! Their
+                  attention to detail and professionalism made the entire
+                  experience smooth and enjoyable. Highly recommend their
+                  interior design and material supply services.
+                </p>
+              </div>
+              <!-- New testimonial 2 -->
+              <div class="d-flex flex-column">
+                <div class="d-flex align-items-center mb-3">
+                    <!-- <img
+                      class="img-fluid rounded-circle"
+                      src="img/testimonial-4.jpg"
+                      style="width: 60px; height: 60px"
+                      alt=""
+                    /> -->
+                  <div class="ml-3">
+                    <h5>Jagdish Patil</h5>
+                    <i>Homeowner, Thane West, Mumbai</i>
+                  </div>
+                </div>
+                <p>
+                  The V.V Interiors team not only delivered stunning designs but also
+                  supplied high-quality construction materials right on time.
+                  Their end-to-end service is a rare find and makes them our
+                  go-to for all projects.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-md-5">
+      <div class="row pt-5">
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h4 class="text-primary mb-4">Get In Touch</h4>
+          <p><i class="fa fa-map-marker-alt mr-2"></i>Golden Nest, Bhayander(E)</p>
+          <p><i class="fa fa-globe mr-2"></i>Serving All Over Mumbai - Andheri, Borivali, Malad, Bandra, Navi Mumbai, Thane & More</p>
+          <p><i class="fa fa-phone-alt mr-2"></i>+91 7977422729</p>
+          <p><i class="fa fa-envelope mr-2"></i>tiwaririjul13@gmail.com</p>
+          <div class="d-flex justify-content-start mt-4">
+            <a
+              class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h4 class="text-primary mb-4">Quick Links</h4>
+          <div class="d-flex flex-column justify-content-start">
+            <a class="text-white mb-2" href="index.html"
+              ><i class="fa fa-angle-right mr-2"></i>Home</a
+            >
+            <a class="text-white mb-2" href="about.html"
+              ><i class="fa fa-angle-right mr-2"></i>About Us</a
+            >
+            <a class="text-white mb-2" href="service.html"
+              ><i class="fa fa-angle-right mr-2"></i>Our Services</a
+            >
+            <a class="text-white mb-2" href="project.html"
+              ><i class="fa fa-angle-right mr-2"></i>Our Projects</a
+            >
+            <a class="text-white" href="contact.html"
+              ><i class="fa fa-angle-right mr-2"></i>Contact Us</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h4 class="text-primary mb-4">Popular Links</h4>
+          <div class="d-flex flex-column justify-content-start">
+            <a class="text-white mb-2" href="index.html"
+              ><i class="fa fa-angle-right mr-2"></i>Home</a
+            >
+            <a class="text-white mb-2" href="about.html"
+              ><i class="fa fa-angle-right mr-2"></i>About Us</a
+            >
+            <a class="text-white mb-2" href="service.html"
+              ><i class="fa fa-angle-right mr-2"></i>Our Services</a
+            >
+            <a class="text-white mb-2" href="project.html"
+              ><i class="fa fa-angle-right mr-2"></i>Our Projects</a
+            >
+            <a class="text-white" href="contact.html"
+              ><i class="fa fa-angle-right mr-2"></i>Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="container border-top border-secondary pt-5">
+        <p class="m-0 text-center text-white">
+          &copy;2025
+          <a class="text-white font-weight-bold" href="#">vvinteriorsandinfraprojects</a>. All Rights
+          Reserved. Designed by
+          <a class="text-white font-weight-bold" href="#"
+            >Valentine Fernandes</a
+          >
+        </p>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"
+      ><i class="fa fa-angle-double-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/whatsapp-component.js"></script>
+    <script src="js/contact-cta.js"></script>
+
+    <!-- Page-Specific Event Tracking -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const currentPage = window.location.pathname;
+        const pageTitle = document.title;
+        const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
+        
+        gtag('event', 'page_loaded', {
+          'event_category': 'Page Tracking',
+          'event_label': pageTitle,
+          'page_path': currentPage,
+          'page_type': getPageType(),
+          'load_time': Math.round(loadTime),
+          'value': 1
+        });
+
+        if (currentPage.includes('service')) {
+          gtag('event', 'service_page_view', {
+            'event_category': 'Services',
+            'event_label': 'Services Page Viewed',
+            'value': 1
+          });
+        }
+      });
+    </script>
+
+    <!-- User Interaction Tracking - All Pages -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const currentPage = window.location.pathname;
+        const whatsappLinks = document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"]');
+        whatsappLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            gtag('event', 'whatsapp_click', {
+              'event_category': 'Contact',
+              'event_label': 'WhatsApp Click - ' + currentPage,
+              'page_path': currentPage,
+              'page_type': getPageType(),
+              'value': 1
+            });
+          });
+        });
+        const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+        phoneLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            gtag('event', 'phone_click', {
+              'event_category': 'Contact',
+              'event_label': 'Phone Click - ' + currentPage,
+              'page_path': currentPage,
+              'page_type': getPageType(),
+              'value': 1
+            });
+          });
+        });
+        const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+        emailLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            gtag('event', 'email_click', {
+              'event_category': 'Contact',
+              'event_label': 'Email Click - ' + currentPage,
+              'page_path': currentPage,
+              'page_type': getPageType(),
+              'value': 1
+            });
+          });
+        });
+        const ctaButtons = document.querySelectorAll('a.btn-primary, a[href*="service"], a[href*="contact"], a[href*="project"], .btn-primary');
+        ctaButtons.forEach(function(button) {
+          button.addEventListener('click', function() {
+            const buttonText = button.textContent.trim().substring(0, 50);
+            gtag('event', 'cta_click', {
+              'event_category': 'Engagement',
+              'event_label': buttonText + ' - ' + currentPage,
+              'page_path': currentPage,
+              'page_type': getPageType(),
+              'value': 1
+            });
+          });
+        });
+        const portfolioImages = document.querySelectorAll('.portfolio-item img, .portfolio-img img, .portfolio-item');
+        portfolioImages.forEach(function(item) {
+          item.addEventListener('click', function() {
+            const imageAlt = item.alt || item.querySelector('img')?.alt || 'Portfolio Image';
+            gtag('event', 'portfolio_image_click', {
+              'event_category': 'Portfolio',
+              'event_label': imageAlt.substring(0, 50),
+              'page_path': currentPage,
+              'page_type': getPageType(),
+              'value': 1
+            });
+          });
+        });
+        let maxScroll = 0;
+        const scrollThresholds = [25, 50, 75, 90, 100];
+        window.addEventListener('scroll', function() {
+          const scrollPercent = Math.round(
+            (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100
+          );
+          scrollThresholds.forEach(function(threshold) {
+            if (scrollPercent >= threshold && maxScroll < threshold) {
+              maxScroll = threshold;
+              gtag('event', 'scroll_depth', {
+                'event_category': 'Engagement',
+                'event_label': threshold + '% - ' + currentPage,
+                'scroll_percent': threshold,
+                'page_path': currentPage,
+                'page_type': getPageType(),
+                'value': threshold
+              });
+            }
+          });
+        });
+        const timeIntervals = [10, 30, 60, 120, 300];
+        timeIntervals.forEach(function(seconds) {
+          setTimeout(function() {
+            gtag('event', 'time_on_page', {
+              'event_category': 'Engagement',
+              'event_label': seconds + ' seconds - ' + currentPage,
+              'time_seconds': seconds,
+              'page_path': currentPage,
+              'page_type': getPageType(),
+              'value': seconds
+            });
+          }, seconds * 1000);
+        });
+        const navLinks = document.querySelectorAll('nav a, .navbar a, .nav-link');
+        navLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            const linkText = link.textContent.trim();
+            const linkHref = link.getAttribute('href');
+            gtag('event', 'navigation_click', {
+              'event_category': 'Navigation',
+              'event_label': linkText + ' - From ' + currentPage,
+              'link_destination': linkHref,
+              'page_path': currentPage,
+              'page_type': getPageType(),
+              'value': 1
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
