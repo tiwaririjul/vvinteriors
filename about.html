@@ -1,154 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google Analytics 4 (GA4) - Enhanced Page Tracking -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5HTM90V3VT"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      // Function to identify page type
-      function getPageType() {
-        const path = window.location.pathname;
-        if (path === '/' || path.includes('index')) return 'Home';
-        if (path.includes('about')) return 'About';
-        if (path.includes('service')) return 'Service';
-        if (path.includes('project')) return 'Project';
-        if (path.includes('contact')) return 'Contact';
-        if (path.includes('interior-designer-')) return 'Location Page';
-        if (path.includes('blog')) return 'Blog';
-        return 'Other';
-      }
+<head>
+  <!-- Google Analytics 4 (GA4) - Enhanced Page Tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5HTM90V3VT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      // Function to identify page category
-      function getPageCategory() {
-        const path = window.location.pathname;
-        if (path.includes('interior-designer-')) return 'Location SEO';
-        if (path === '/' || path.includes('index')) return 'Main';
-        return 'Content';
-      }
+    // Function to identify page type
+    function getPageType() {
+      const path = window.location.pathname;
+      if (path === '/' || path.includes('index')) return 'Home';
+      if (path.includes('about')) return 'About';
+      if (path.includes('service')) return 'Service';
+      if (path.includes('project')) return 'Project';
+      if (path.includes('contact')) return 'Contact';
+      if (path.includes('interior-designer-')) return 'Location Page';
+      if (path.includes('blog')) return 'Blog';
+      return 'Other';
+    }
 
-      // Enhanced GA4 Configuration with Page-Specific Tracking
-      gtag('config', 'G-5HTM90V3VT', {
-        // Basic settings
-        'send_page_view': true,
-        'anonymize_ip': true, // Privacy compliance
-        'cookie_flags': 'SameSite=None;Secure',
-        
-        // Page information
-        'page_title': document.title,
-        'page_location': window.location.href,
-        'page_path': window.location.pathname,
-        
-        // Custom parameters for each page
-        'page_type': getPageType(),
-        'page_category': getPageCategory(),
-        
-        // SEO-friendly settings
-        'allow_google_signals': true,
-        'allow_ad_personalization_signals': true,
-        
-        // Performance
-        'transport_type': 'beacon'
-      });
+    // Function to identify page category
+    function getPageCategory() {
+      const path = window.location.pathname;
+      if (path.includes('interior-designer-')) return 'Location SEO';
+      if (path === '/' || path.includes('index')) return 'Main';
+      return 'Content';
+    }
 
-      // Enhanced page view event with custom data
-      gtag('event', 'page_view', {
-        'page_title': document.title,
-        'page_location': window.location.href,
-        'page_path': window.location.pathname,
-        'page_type': getPageType(),
-        'page_category': getPageCategory(),
-        'engagement_time_msec': 0
-      });
-    </script>
-    
-    <meta charset="utf-8" />
-    <title>About VV Interiors | VV Infra | vvinteriorsandinfraprojects - Top Interior Designer, Construction & Plywood Furniture | Bhayander Mumbai | 15+ Years Experience</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="interior designer bhayander mumbai, construction company mumbai, plywood furniture bhayander, home interior design mumbai, office interior design, custom furniture mumbai, modular kitchen bhayander, electrical work mumbai, civil work mumbai, renovation mumbai, construction mumbai, bedroom design, living room design, commercial interior, residential interior, 15 years experience interior designer, plywood business, custom bed, custom sofa, furniture manufacturing, vvinteriorsandinfraprojects, VV Interiors, VV Infra, V.V Interiors" name="keywords" />
-    <meta content="About VV Interiors (also known as VV Infra or vvinteriorsandinfraprojects) - Mumbai's leading interior design, construction & plywood furniture company in Bhayander with 15+ years experience. Complete interior design, construction, electrical work, civil work, renovation services for homes, offices, gyms. Expert plywood furniture makers crafting custom beds, sofas, tables, chairs & wooden furniture. Serving all over Mumbai." name="description" />
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://vvinteriorsandinfraprojects.com/about.html" />
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="About vvinteriorsandinfraprojects - Top Interior Designer Mumbai" />
-    <meta property="og:description" content="Mumbai's leading interior design, construction & plywood furniture company with 15+ years experience. Complete interior design, construction, electrical work, civil work, renovation services." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://vvinteriorsandinfraprojects.com/about.html" />
-    <meta property="og:image" content="https://vvinteriorsandinfraprojects.com/img/vvinterior/logo-final.png" />
-    <meta property="og:site_name" content="vvinteriorsandinfraprojects" />
+    // Enhanced GA4 Configuration with Page-Specific Tracking
+    gtag('config', 'G-5HTM90V3VT', {
+      // Basic settings
+      'send_page_view': true,
+      'anonymize_ip': true, // Privacy compliance
+      'cookie_flags': 'SameSite=None;Secure',
 
-    <!-- Favicon -->
-    <link href="img/interior.png" rel="icon" />
+      // Page information
+      'page_title': document.title,
+      'page_location': window.location.href,
+      'page_path': window.location.pathname,
 
-    <!-- Google Web Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+      // Custom parameters for each page
+      'page_type': getPageType(),
+      'page_category': getPageCategory(),
 
-    <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
+      // SEO-friendly settings
+      'allow_google_signals': true,
+      'allow_ad_personalization_signals': true,
 
-    <!-- Flaticon Font -->
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+      // Performance
+      'transport_type': 'beacon'
+    });
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    // Enhanced page view event with custom data
+    gtag('event', 'page_view', {
+      'page_title': document.title,
+      'page_location': window.location.href,
+      'page_path': window.location.pathname,
+      'page_type': getPageType(),
+      'page_category': getPageCategory(),
+      'engagement_time_msec': 0
+    });
+  </script>
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-    
-    <style>
-      /* Navbar Logo Styling - Responsive */
+  <meta charset="utf-8" />
+  <title>About VV Interiors | VV Infra | VV Interiors - Top Interior Designer, Construction & Plywood
+    Furniture | Bhayander Mumbai | 15+ Years Experience</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta
+    content="interior designer bhayander mumbai, construction company mumbai, plywood furniture bhayander, home interior design mumbai, office interior design, custom furniture mumbai, modular kitchen bhayander, electrical work mumbai, civil work mumbai, renovation mumbai, construction mumbai, bedroom design, living room design, commercial interior, residential interior, 15 years experience interior designer, plywood business, custom bed, custom sofa, furniture manufacturing, vvinteriorsandinfraprojects, VV Interiors, VV Infra, V.V Interiors"
+    name="keywords" />
+  <meta
+    content="About VV Interiors (also known as VV Infra or VV Interiors) - Mumbai's leading interior design, construction & plywood furniture company in Bhayander with 15+ years experience. Complete interior design, construction, electrical work, civil work, renovation services for homes, offices, gyms. Expert plywood furniture makers crafting custom beds, sofas, tables, chairs & wooden furniture. Serving all over Mumbai."
+    name="description" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://vv-interiors.in/about" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="About VV Interiors - Top Interior Designer Mumbai" />
+  <meta property="og:description"
+    content="Mumbai's leading interior design, construction & plywood furniture company with 15+ years experience. Complete interior design, construction, electrical work, civil work, renovation services." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vv-interiors.in/about" />
+  <meta property="og:image" content="https://vv-interiors.in/img/vvinterior/logo-final.png" />
+  <meta property="og:site_name" content="VV Interiors" />
+
+  <!-- Favicon -->
+  <link href="img/interior.png" rel="icon" />
+
+  <!-- Google Web Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Flaticon Font -->
+  <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+
+  <style>
+    /* Navbar Logo Styling - Responsive */
+    .navbar-logo {
+      height: 100px;
+      /* Desktop */
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+
+    .navbar-logo:hover {
+      transform: scale(1.05);
+    }
+
+    .navbar-brand {
+      padding: 0.5rem 1rem;
+    }
+
+    @media (max-width: 992px) {
       .navbar-logo {
-        height: 100px; /* Desktop */
-        width: auto;
-        max-width: 100%;
-        object-fit: contain;
-        transition: transform 0.3s ease;
+        height: 70px;
+        /* Tablet/Small Desktop */
       }
+    }
 
-      .navbar-logo:hover {
-        transform: scale(1.05);
+    @media (max-width: 768px) {
+      .navbar-logo {
+        height: 60px;
+        /* Tablet */
       }
+    }
 
-      .navbar-brand {
-        padding: 0.5rem 1rem;
+    @media (max-width: 576px) {
+      .navbar-logo {
+        height: 50px;
+        /* Mobile */
       }
+    }
+  </style>
 
-      @media (max-width: 992px) {
-        .navbar-logo {
-          height: 70px; /* Tablet/Small Desktop */
-        }
-      }
-
-      @media (max-width: 768px) {
-        .navbar-logo {
-          height: 60px; /* Tablet */
-        }
-      }
-
-      @media (max-width: 576px) {
-        .navbar-logo {
-          height: 50px; /* Mobile */
-        }
-      }
-    </style>
-    
-    <!-- Structured Data for SEO -->
-    <script type="application/ld+json">
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "vvinteriorsandinfraprojects",
+      "name": "VV Interiors",
       "alternateName": [
         "VV Interiors",
         "VV Infra",
@@ -157,8 +163,8 @@
         "VV Infra Projects"
       ],
       "description": "Mumbai's leading interior design, construction & plywood furniture company in Bhayander with 15+ years experience. Complete interior design, construction, electrical work, civil work, renovation services for homes, offices, gyms. Expert plywood furniture makers crafting custom beds, sofas, tables, chairs & wooden furniture. Serving all over Mumbai.",
-      "url": "https://vvinteriorsandinfraprojects.com",
-      "logo": "https://vvinteriorsandinfraprojects.com/img/interior.png",
+      "url": "https://vv-interiors.in",
+      "logo": "https://vv-interiors.in/img/interior.png",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "TEMPLE, Shop No: 6, Paras Plaza, CHS, Golden Nest, Near Saibaba Galli",
@@ -195,15 +201,15 @@
       ]
     }
     </script>
-  </head>
+</head>
 
-  <body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark py-3">
-      <div class="container">
-        <!-- <div class="row"> -->
-        <!-- fAQ's -->
-        <!-- <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+<body>
+  <!-- Topbar Start -->
+  <div class="container-fluid bg-dark py-3">
+    <div class="container">
+      <!-- <div class="row"> -->
+      <!-- fAQ's -->
+      <!-- <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
             <div class="d-inline-flex align-items-center">
               <a class="text-white pr-3" href="">FAQs</a>
               <span class="text-white">|</span>
@@ -212,57 +218,40 @@
               <a class="text-white pl-3" href="">Support</a>
             </div>
           </div> -->
-        <div class="col-md-6 text-center text-lg-right">
-          <div class="d-inline-flex align-items-center">
-            <a class="text-white px-3" href="">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a class="text-white px-3" href="">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a class="text-white px-3" href="">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a class="text-white px-3" href="">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a class="text-white pl-3" href="">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </div>
-        </div>
-        <!-- </div> -->
-      </div>
-    </div>
-    <!-- Topbar End -->
-
-    <!-- Navbar Start -->
-    <div class="container-fluid position-relative nav-bar p-0">
-      <div class="container position-relative" style="z-index: 9">
-        <nav
-          class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5"
-        >
-          <a href="index.html" class="navbar-brand">
-            <img src="img/vvinterior/logo-final.png" alt="vvinteriorsandinfraprojects - Interior Designer Mumbai" class="navbar-logo">
+      <div class="col-md-6 text-center text-lg-right">
+        <div class="d-inline-flex align-items-center">
+          <a class="text-white px-3" href="https://www.facebook.com/share/16JQHtdLaS/" target="_blank"
+            rel="noopener noreferrer" aria-label="Follow us on Facebook">
+            <i class="fab fa-facebook-f"></i>
           </a>
-          <button
-            type="button"
-            class="navbar-toggler"
-            data-toggle="collapse"
-            data-target="#navbarCollapse"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-between px-3"
-            id="navbarCollapse"
-          >
-            <div class="navbar-nav ml-auto py-0">
-              <a href="index.html" class="nav-item nav-link">Home</a>
-              <a href="about.html" class="nav-item nav-link active">About</a>
-              <a href="service.html" class="nav-item nav-link">Service</a>
-              <a href="project.html" class="nav-item nav-link">Project</a>
-              <!-- <div class="nav-item dropdown">
+          <a class="text-white px-3" href="https://www.instagram.com/vvinteriorsandinfraprojects/" target="_blank"
+            rel="noopener noreferrer" aria-label="Follow us on Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+  </div>
+  <!-- Topbar End -->
+
+  <!-- Navbar Start -->
+  <div class="container-fluid position-relative nav-bar p-0">
+    <div class="container position-relative" style="z-index: 9">
+      <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+        <a href="/" class="navbar-brand">
+          <img src="img/vvinterior/logo-final.png" alt="VV Interiors - Interior Designer Mumbai" class="navbar-logo">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+          <div class="navbar-nav ml-auto py-0">
+            <a href="/" class="nav-item nav-link">Home</a>
+            <a href="/about" class="nav-item nav-link active">About</a>
+            <a href="/service" class="nav-item nav-link">Service</a>
+            <a href="/project" class="nav-item nav-link">Project</a>
+            <!-- <div class="nav-item dropdown">
                 <a
                   href="#"
                   class="nav-link dropdown-toggle"
@@ -270,88 +259,81 @@
                   >Pages</a
                 >
                 <div class="dropdown-menu rounded-0 m-0">
-                  <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                  <a href="single.html" class="dropdown-item">Blog Detail</a>
+                  <a href="/blog" class="dropdown-item">Blog Grid</a>
+                  <a href="/single" class="dropdown-item">Blog Detail</a>
                 </div>
               </div> -->
-              <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
+            <a href="/contact" class="nav-item nav-link">Contact</a>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
-    <!-- Navbar End -->
+  </div>
+  <!-- Navbar End -->
 
-    <!-- Under Nav Start -->
-    <div class="container-fluid bg-white py-3">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 text-left mb-3 mb-lg-0">
-            <div class="d-inline-flex text-left">
-              <h1
-                class="flaticon-office font-weight-normal text-primary m-0 mr-3"
-              ></h1>
-              <div class="d-flex flex-column">
-                <h5>Our Office</h5>
-                <p class="m-0">Golden Nest, Bhayander(E)</p>
-                <small class="text-muted">Serving All Over Mumbai</small>
-              </div>
+  <!-- Under Nav Start -->
+  <div class="container-fluid bg-white py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 text-left mb-3 mb-lg-0">
+          <div class="d-inline-flex text-left">
+            <h1 class="flaticon-office font-weight-normal text-primary m-0 mr-3"></h1>
+            <div class="d-flex flex-column">
+              <h5>Our Office</h5>
+              <p class="m-0">Golden Nest, Bhayander(E)</p>
+              <small class="text-muted">Serving All Over Mumbai</small>
             </div>
           </div>
-          <div class="col-lg-4 text-left text-lg-center mb-3 mb-lg-0">
-            <div class="d-inline-flex text-left">
-              <h1
-                class="flaticon-email font-weight-normal text-primary m-0 mr-3"
-              ></h1>
-              <div class="d-flex flex-column">
-                <h5>Email Us</h5>
-                <p class="m-0">tiwaririjul13@gmail.com</p>
-              </div>
+        </div>
+        <div class="col-lg-4 text-left text-lg-center mb-3 mb-lg-0">
+          <div class="d-inline-flex text-left">
+            <h1 class="flaticon-email font-weight-normal text-primary m-0 mr-3"></h1>
+            <div class="d-flex flex-column">
+              <h5>Email Us</h5>
+              <p class="m-0">tiwaririjul13@gmail.com</p>
             </div>
           </div>
-          <div class="col-lg-4 text-left text-lg-right mb-3 mb-lg-0">
-            <div class="d-inline-flex text-left">
-              <h1
-                class="flaticon-telephone font-weight-normal text-primary m-0 mr-3"
-              ></h1>
-              <div class="d-flex flex-column">
-                <h5>Call Us</h5>
-                <p class="m-0">+91 7977422729</p>
-              </div>
+        </div>
+        <div class="col-lg-4 text-left text-lg-right mb-3 mb-lg-0">
+          <div class="d-inline-flex text-left">
+            <h1 class="flaticon-telephone font-weight-normal text-primary m-0 mr-3"></h1>
+            <div class="d-flex flex-column">
+              <h5>Call Us</h5>
+              <p class="m-0">+91 7977422729</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Under Nav End -->
+  </div>
+  <!-- Under Nav End -->
 
-    <!-- Page Header Start -->
-    <div class="container-fluid bg-secondary py-5">
-      <div class="container py-5">
-        <div class="row align-items-center py-4">
-          <div class="col-md-6 text-center text-md-left">
-            <h2 class="mb-4 mb-md-0 text-primary text-uppercase">About Us</h2>
-          </div>
-          <div class="col-md-6 text-center text-md-right">
-            <div class="d-inline-flex align-items-center">
-              <a class="btn btn-outline-primary" href="">Home</a>
-              <i class="fas fa-angle-double-right text-primary mx-2"></i>
-              <a class="btn btn-outline-primary disabled" href="">About Us</a>
-            </div>
+  <!-- Page Header Start -->
+  <div class="container-fluid bg-secondary py-5">
+    <div class="container py-5">
+      <div class="row align-items-center py-4">
+        <div class="col-md-6 text-center text-md-left">
+          <h2 class="mb-4 mb-md-0 text-primary text-uppercase">About Us</h2>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <div class="d-inline-flex align-items-center">
+            <a class="btn btn-outline-primary" href="">Home</a>
+            <i class="fas fa-angle-double-right text-primary mx-2"></i>
+            <a class="btn btn-outline-primary disabled" href="">About Us</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- Page Header Start -->
+  </div>
+  <!-- Page Header Start -->
 
-    <!-- About Start -->
-    <div class="container-fluid" style="background-color: #f8f9fa">
-      <div class="container">
-        <div class="row">
-          <!-- Experience Badge -->
-          <div class="col-lg-5">
-            <div
-              style="
+  <!-- About Start -->
+  <div class="container-fluid" style="background-color: #f8f9fa">
+    <div class="container">
+      <div class="row">
+        <!-- Experience Badge -->
+        <div class="col-lg-5">
+          <div style="
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -361,188 +343,169 @@
                 padding: 60px 20px;
                 color: #fff;
                 text-align: center;
-              "
-            >
-              <i
-                class="flaticon-brickwall"
-                style="font-size: 60px; color: #ffc107; margin-bottom: 20px"
-              ></i>
-              <h4 style="font-size: 50px; margin-bottom: 10px">15+</h4>
-              <h2 style="margin: 0; font-weight: 600">Years Experience</h2>
-              <p style="margin: 10px 0 0 0; font-size: 16px; opacity: 0.9">Trusted by 500+ Clients</p>
-            </div>
+              ">
+            <i class="flaticon-brickwall" style="font-size: 60px; color: #ffc107; margin-bottom: 20px"></i>
+            <h4 style="font-size: 50px; margin-bottom: 10px">15+</h4>
+            <h2 style="margin: 0; font-weight: 600">Years Experience</h2>
+            <p style="margin: 10px 0 0 0; font-size: 16px; opacity: 0.9">Trusted by 500+ Clients</p>
           </div>
+        </div>
 
-          <!-- About Content -->
-          <div class="col-lg-7" style="padding: 60px 30px">
-            <h6
-              style="
-                color: #007bff;
+        <!-- About Content -->
+        <div class="col-lg-7" style="padding: 60px 30px">
+          <h6 style="
                 font-weight: 500;
                 text-transform: uppercase;
                 margin-bottom: 15px;
-              "
-            >
-              Learn About Us
-            </h6>
-            <h1 style="font-size: 32px; font-weight: 700; margin-bottom: 25px">
-              Mumbai's #1 Interior Design, Construction & Plywood Furniture Experts | 15+ Years Excellence
-            </h1>
-            <p style="color: #555; line-height: 1.6">
-              <strong>vvinteriorsandinfraprojects</strong> is Mumbai's trusted interior design, construction, and plywood furniture company with <strong>15+ years of experience</strong>. 
-              Based in Golden Nest, Bhayander(E), we serve all of Mumbai, transforming homes, flats, bungalows, offices, gyms, kitchens, bedrooms, and every type of interior renovation.
-              <br /><br />
-              Our expertise in <strong>interior design, construction, electrical work, civil work, renovation, and plywood furniture manufacturing</strong> allows 
-              us to offer complete solutions under one roof. We craft custom beds, sofas, modular kitchens, wardrobes, and all wooden furniture with precision 
-              and quality craftsmanship. With <strong>500+ successful projects</strong>, we're Mumbai's most trusted interior design and construction company.
-              <br /><br />
-              We deliver exceptional results combining aesthetic appeal with functional design, ensuring every project exceeds expectations while maintaining 
-              the highest standards of quality. Our 15+ years of experience makes us Mumbai's premier choice for complete interior design, construction, and plywood furniture solutions.
-            </p>
+              " class="text-primary">
+            Learn About Us
+          </h6>
+          <h1 style="font-size: 32px; font-weight: 700; margin-bottom: 25px">
+            Mumbai's #1 Interior Design, Construction & Plywood Furniture Experts | 15+ Years Excellence
+          </h1>
+          <p style="color: #555; line-height: 1.6">
+            <strong>VV Interiors</strong> is Mumbai's trusted interior design, construction, and plywood furniture
+            company with <strong>15+ years of experience</strong>.
+            Based in Golden Nest, Bhayander(E), we serve all of Mumbai, transforming homes, flats, bungalows, offices,
+            gyms, kitchens, bedrooms, and every type of interior renovation.
+            <br /><br />
+            Our expertise in <strong>interior design, construction, electrical work, civil work, renovation, and plywood
+              furniture manufacturing</strong> allows
+            us to offer complete solutions under one roof. We craft custom beds, sofas, modular kitchens, wardrobes, and
+            all wooden furniture with precision
+            and quality craftsmanship. With <strong>500+ successful projects</strong>, we're Mumbai's most trusted
+            interior design and construction company.
+            <br /><br />
+            We deliver exceptional results combining aesthetic appeal with functional design, ensuring every project
+            exceeds expectations while maintaining
+            the highest standards of quality. Our 15+ years of experience makes us Mumbai's premier choice for complete
+            interior design, construction, and plywood furniture solutions.
+          </p>
 
-            <!-- Services -->
-            <div class="row" style="padding-top: 20px">
-              <div class="col-sm-6" style="margin-bottom: 20px">
-                <div style="display: flex; align-items: center">
-                  <i
-                    class="flaticon-house"
-                    style="font-size: 24px; color: #007bff; margin-right: 15px"
-                  ></i>
-                  <h5 style="margin: 0; font-weight: 500">Residential Interior Design</h5>
-                </div>
+          <!-- Services -->
+          <div class="row" style="padding-top: 20px">
+            <div class="col-sm-6" style="margin-bottom: 20px">
+              <div style="display: flex; align-items: center">
+                <i class="flaticon-house text-primary" style="font-size: 24px; margin-right: 15px"></i>
+                <h5 class="" style="margin: 0; font-weight: 500">Residential Interior Design</h5>
               </div>
-              <div class="col-sm-6" style="margin-bottom: 20px">
-                <div style="display: flex; align-items: center">
-                  <i
-                    class="flaticon-office"
-                    style="font-size: 24px; color: #007bff; margin-right: 15px"
-                  ></i>
-                  <h5 style="margin: 0; font-weight: 500">Commercial Interior Design</h5>
-                </div>
+            </div>
+            <div class="col-sm-6" style="margin-bottom: 20px">
+              <div style="display: flex; align-items: center">
+                <i class="flaticon-office text-primary" style="font-size: 24px;  margin-right: 15px"></i>
+                <h5 style="margin: 0; font-weight: 500">Commercial Interior Design</h5>
               </div>
-              <div class="col-sm-6" style="margin-bottom: 20px">
-                <div style="display: flex; align-items: center">
-                  <i
-                    class="flaticon-living-room"
-                    style="font-size: 24px; color: #007bff; margin-right: 15px"
-                  ></i>
-                  <h5 style="margin: 0; font-weight: 500">Custom Plywood Furniture</h5>
-                </div>
+            </div>
+            <div class="col-sm-6" style="margin-bottom: 20px">
+              <div style="display: flex; align-items: center">
+                <i class="flaticon-living-room text-primary"
+                  style="font-size: 24px; color: #007bff; margin-right: 15px"></i>
+                <h5 style="margin: 0; font-weight: 500">Custom Plywood Furniture</h5>
               </div>
-              <div class="col-sm-6" style="margin-bottom: 20px">
-                <div style="display: flex; align-items: center">
-                  <i
-                    class="flaticon-stairs"
-                    style="font-size: 24px; color: #007bff; margin-right: 15px"
-                  ></i>
-                  <h5 style="margin: 0; font-weight: 500">Modular Kitchen Design</h5>
-                </div>
+            </div>
+            <div class="col-sm-6" style="margin-bottom: 20px">
+              <div style="display: flex; align-items: center">
+                <i class="flaticon-stairs text-primary" style="font-size: 24px; margin-right: 15px"></i>
+                <h5 style="margin: 0; font-weight: 500">Modular Kitchen Design</h5>
               </div>
-              <div class="col-sm-6" style="margin-bottom: 20px">
-                <div style="display: flex; align-items: center">
-                  <i
-                    class="flaticon-brickwall"
-                    style="font-size: 24px; color: #007bff; margin-right: 15px"
-                  ></i>
-                  <h5 style="margin: 0; font-weight: 500">Electrical Work</h5>
-                </div>
+            </div>
+            <div class="col-sm-6" style="margin-bottom: 20px">
+              <div style="display: flex; align-items: center">
+                <i class="flaticon-brickwall text-primary" style="font-size: 24px;  margin-right: 15px"></i>
+                <h5 style="margin: 0; font-weight: 500">Electrical Work</h5>
               </div>
-              <div class="col-sm-6" style="margin-bottom: 20px">
-                <div style="display: flex; align-items: center">
-                  <i
-                    class="flaticon-brickwall"
-                    style="font-size: 24px; color: #007bff; margin-right: 15px"
-                  ></i>
-                  <h5 style="margin: 0; font-weight: 500">Civil Work & Construction</h5>
-                </div>
+            </div>
+            <div class="col-sm-6" style="margin-bottom: 20px">
+              <div style="display: flex; align-items: center">
+                <i class="flaticon-brickwall text-primary" style="font-size: 24px;  margin-right: 15px"></i>
+                <h5 style="margin: 0; font-weight: 500">Civil Work & Construction</h5>
               </div>
-              <div class="col-sm-6" style="margin-bottom: 20px">
-                <div style="display: flex; align-items: center">
-                  <i
-                    class="flaticon-stairs"
-                    style="font-size: 24px; color: #007bff; margin-right: 15px"
-                  ></i>
-                  <h5 style="margin: 0; font-weight: 500">Renovation Work</h5>
-                </div>
+            </div>
+            <div class="col-sm-6" style="margin-bottom: 20px">
+              <div style="display: flex; align-items: center">
+                <i class="flaticon-stairs text-primary" style="font-size: 24px;  margin-right: 15px"></i>
+                <h5 style="margin: 0; font-weight: 500">Renovation Work</h5>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- About End -->
+  <!-- About End -->
 
-    <!-- Features Start -->
-    <div class="container-fluid bg-light">
-      <div class="container">
-        <div class="row">
-          <!-- Content Section -->
-          <div class="col-lg-7 mt-5 py-5 pr-lg-5">
-            <h6 class="text-primary font-weight-normal text-uppercase mb-3">
-              Why Choose Us?
-            </h6>
-            <h1 class="mb-4 section-title">
-              Mumbai's Most Trusted Interior Design, Construction & Plywood Furniture Experts | 15+ Years Excellence
-            </h1>
+  <!-- Features Start -->
+  <div class="container-fluid bg-light">
+    <div class="container">
+      <div class="row">
+        <!-- Content Section -->
+        <div class="col-lg-7 mt-5 py-5 pr-lg-5">
+          <h6 class="text-primary font-weight-normal text-uppercase mb-3">
+            Why Choose Us?
+          </h6>
+          <h1 class="mb-4 section-title">
+            Mumbai's Most Trusted Interior Design, Construction & Plywood Furniture Experts | 15+ Years Excellence
+          </h1>
 
-            <p class="mb-4" style="font-size: 1.05rem; line-height: 1.7;">
-              With <strong>15+ years of proven experience</strong> and <strong>500+ successful projects</strong>, vvinteriorsandinfraprojects is Mumbai's leading provider of complete interior design, construction, and custom plywood furniture solutions. We specialize in homes, offices, gyms, modular kitchens, electrical work, civil work, and all types of renovations across Bhayander, Malad, Borivali, Andheri, Bandra, and all Mumbai areas.
-            </p>
+          <p class="mb-4" style="font-size: 1.05rem; line-height: 1.7;">
+            With <strong>15+ years of proven experience</strong> and <strong>500+ successful projects</strong>,
+            VV Interiors is Mumbai's leading provider of complete interior design, construction, and custom plywood
+            furniture solutions. We specialize in homes, offices, gyms, modular kitchens, electrical work, civil work,
+            and all types of renovations across Bhayander, Malad, Borivali, Andheri, Bandra, and all Mumbai areas.
+          </p>
 
-            <ul class="list-inline mb-4">
-              <li class="mb-3">
-                <h5 style="font-size: 1.1rem;">
-                  <i class="far fa-check-square text-primary mr-3"></i><strong>15+ Years Experience</strong> - 500+ Interior & Construction Projects
-                </h5>
-              </li>
-              <li class="mb-3">
-                <h5 style="font-size: 1.1rem;">
-                  <i class="far fa-check-square text-primary mr-3"></i><strong>Complete Solutions</strong> - Design, Construction & Plywood Furniture
-                </h5>
-              </li>
-              <li class="mb-3">
-                <h5 style="font-size: 1.1rem;">
-                  <i class="far fa-check-square text-primary mr-3"></i><strong>All Over Mumbai</strong> - Bhayander to South Mumbai
-                </h5>
-              </li>
-              <li class="mb-3">
-                <h5 style="font-size: 1.1rem;">
-                  <i class="far fa-check-square text-primary mr-3"></i><strong>Premium Quality</strong> - 100% Satisfaction Guaranteed
-                </h5>
-              </li>
-              <li class="mb-3">
-                <h5 style="font-size: 1.1rem;">
-                  <i class="far fa-check-square text-primary mr-3"></i><strong>Budget-Friendly</strong> - Transparent Pricing & On-Time Delivery
-                </h5>
-              </li>
-            </ul>
+          <ul class="list-inline mb-4">
+            <li class="mb-3">
+              <h5 style="font-size: 1.1rem;">
+                <i class="far fa-check-square text-primary mr-3"></i><strong>15+ Years Experience</strong> - 500+
+                Interior & Construction Projects
+              </h5>
+            </li>
+            <li class="mb-3">
+              <h5 style="font-size: 1.1rem;">
+                <i class="far fa-check-square text-primary mr-3"></i><strong>Complete Solutions</strong> - Design,
+                Construction & Plywood Furniture
+              </h5>
+            </li>
+            <li class="mb-3">
+              <h5 style="font-size: 1.1rem;">
+                <i class="far fa-check-square text-primary mr-3"></i><strong>All Over Mumbai</strong> - Bhayander to
+                South Mumbai
+              </h5>
+            </li>
+            <li class="mb-3">
+              <h5 style="font-size: 1.1rem;">
+                <i class="far fa-check-square text-primary mr-3"></i><strong>Premium Quality</strong> - 100%
+                Satisfaction Guaranteed
+              </h5>
+            </li>
+            <li class="mb-3">
+              <h5 style="font-size: 1.1rem;">
+                <i class="far fa-check-square text-primary mr-3"></i><strong>Budget-Friendly</strong> - Transparent
+                Pricing & On-Time Delivery
+              </h5>
+            </li>
+          </ul>
 
-            <a href="service.html" class="btn btn-primary mt-3 py-2 px-4"
-              >Explore Our Services</a
-            >
-          </div>
+          <a href="/service" class="btn btn-primary mt-3 py-2 px-4">Explore Our Services</a>
+        </div>
 
-          <!-- Image Section -->
-          <div class="col-lg-5">
-            <div
-              class="d-flex flex-column align-items-center justify-content-center h-100 overflow-hidden"
-            >
-              <img
-                class="h-100 img-fluid rounded shadow"
-                src="img/vvinterior/vv6.webp"
-                alt="Premium Interior Design & Construction Mumbai - V.V Interiors Contemporary Bedroom | Complete Design Solutions Bhayander Borivali"
-                loading="lazy"
-              />
-            </div>
+        <!-- Image Section -->
+        <div class="col-lg-5">
+          <div class="d-flex flex-column align-items-center justify-content-center h-100 overflow-hidden">
+            <img class="h-100 img-fluid rounded shadow" src="img/vvinterior/vv6.webp"
+              alt="Premium Interior Design & Construction Mumbai - V.V Interiors Contemporary Bedroom | Complete Design Solutions Bhayander Borivali"
+              loading="lazy" />
           </div>
         </div>
       </div>
     </div>
-    <!-- Features End -->
+  </div>
+  <!-- Features End -->
 
-    <!-- Team Start -->
-    <!-- <div class="container-fluid bg-light">
+  <!-- Team Start -->
+  <!-- <div class="container-fluid bg-light">
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-6">
@@ -692,85 +655,56 @@
         </div>
       </div>
     </div> -->
-    <!-- Team End -->
+  <!-- Team End -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-md-5">
-      <div class="row pt-5">
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h4 class="text-primary mb-4">Get In Touch</h4>
-          <p><i class="fa fa-map-marker-alt mr-2"></i>Golden Nest, Bhayander(E)</p>
-          <p><i class="fa fa-globe mr-2"></i>Serving All Over Mumbai - Andheri, Borivali, Malad, Bandra, Navi Mumbai, Thane & More</p>
-          <p><i class="fa fa-phone-alt mr-2"></i>+91 7977422729</p>
-          <p><i class="fa fa-envelope mr-2"></i>tiwaririjul13@gmail.com</p>
-          <div class="d-flex justify-content-start mt-4">
-            <a
-              class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a
-              class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </div>
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-md-5">
+    <div class="row pt-5">
+      <div class="col-lg-3 col-md-6 mb-5">
+        <h4 class="text-primary mb-4">Get In Touch</h4>
+        <p><i class="fa fa-map-marker-alt mr-2"></i>Golden Nest Phase 3, Queens Park, Mira Road East, Mira Bhayandar,
+          Maharashtra 401105</p>
+        <p><i class="fa fa-globe mr-2"></i>Serving All Over Mumbai - Andheri, Borivali, Malad, Bandra, Navi Mumbai,
+          Thane & More</p>
+        <p><i class="fa fa-phone-alt mr-2"></i>+91 7977422729</p>
+        <p><i class="fa fa-envelope mr-2"></i>tiwaririjul13@gmail.com</p>
+        <div class="d-flex justify-content-start mt-4">
+          <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px"
+            href="https://www.facebook.com/share/16JQHtdLaS/" target="_blank" rel="noopener noreferrer"
+            aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px"
+            href="https://www.instagram.com/vvinteriorsandinfraprojects/" target="_blank" rel="noopener noreferrer"
+            aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
         </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h4 class="text-primary mb-4">Quick Links</h4>
-          <div class="d-flex flex-column justify-content-start">
-            <a class="text-white mb-2" href="index.html"
-              ><i class="fa fa-angle-right mr-2"></i>Home</a
-            >
-            <a class="text-white mb-2" href="about.html"
-              ><i class="fa fa-angle-right mr-2"></i>About Us</a
-            >
-            <a class="text-white mb-2" href="service.html"
-              ><i class="fa fa-angle-right mr-2"></i>Our Services</a
-            >
-            <a class="text-white mb-2" href="project.html"
-              ><i class="fa fa-angle-right mr-2"></i>Our Projects</a
-            >
-            <a class="text-white" href="contact.html"
-              ><i class="fa fa-angle-right mr-2"></i>Contact Us</a
-            >
-          </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-5">
+        <h4 class="text-primary mb-4">Quick Links</h4>
+        <div class="d-flex flex-column justify-content-start">
+          <a class="text-white mb-2" href="/"><i class="fa fa-angle-right mr-2"></i>Home</a>
+          <a class="text-white mb-2" href="/about"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+          <a class="text-white mb-2" href="/service"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
+          <a class="text-white mb-2" href="/project"><i class="fa fa-angle-right mr-2"></i>Our Projects</a>
+          <a class="text-white" href="/contact"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
         </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h4 class="text-primary mb-4">Our Services</h4>
-          <div class="d-flex flex-column justify-content-start">
-            <a class="text-white mb-2" href="service.html"
-              ><i class="fa fa-angle-right mr-2"></i>Residential Interior Design</a
-            >
-            <a class="text-white mb-2" href="service.html"
-              ><i class="fa fa-angle-right mr-2"></i>Commercial Interior Design</a
-            >
-            <a class="text-white mb-2" href="service.html"
-              ><i class="fa fa-angle-right mr-2"></i>Custom Plywood Furniture</a
-            >
-            <a class="text-white mb-2" href="service.html"
-              ><i class="fa fa-angle-right mr-2"></i>Modular Kitchen Design</a
-            >
-            <a class="text-white" href="service.html"
-              ><i class="fa fa-angle-right mr-2"></i>Office & Gym Design</a
-            >
-          </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-5">
+        <h4 class="text-primary mb-4">Popular Links</h4>
+        <div class="d-flex flex-column justify-content-start">
+          <a class="text-white mb-2" href="/interior-designer-andheri"><i class="fa fa-angle-right mr-2"></i>Interior
+            Designer in Andheri</a>
+          <a class="text-white mb-2" href="/interior-designer-bandra"><i class="fa fa-angle-right mr-2"></i>Interior
+            Designer in Bandra</a>
+          <a class="text-white mb-2" href="/interior-designer-bhayander"><i class="fa fa-angle-right mr-2"></i>Interior
+            Designer in Bhayander</a>
+          <a class="text-white mb-2" href="/interior-designer-borivali"><i class="fa fa-angle-right mr-2"></i>Interior
+            Designer in Borivali</a>
+          <a class="text-white mb-2" href="/interior-designer-malad"><i class="fa fa-angle-right mr-2"></i>Interior
+            Designer in Malad</a>
+          <a class="text-white" href="/interior-designer-navi-mumbai"><i class="fa fa-angle-right mr-2"></i>Interior
+            Designer in Navi Mumbai</a>
         </div>
-        <!-- <div class="col-lg-3 col-md-6 mb-5">
+      </div>
+      <!-- <div class="col-lg-3 col-md-6 mb-5">
           <h4 class="text-primary mb-4">Newsletter</h4>
           <form action="">
             <div class="form-group">
@@ -799,206 +733,203 @@
             </div>
           </form>
         </div> -->
-      </div>
-      <div class="container border-top border-secondary pt-5">
-        <p class="m-0 text-center text-white">
-          &copy;2025
-          <a class="text-white font-weight-bold" href="#">vvinteriorsandinfraprojects</a>. All Rights
-          Reserved. Designed by
-          <a class="text-white font-weight-bold" href="#"
-            >Rijul Tiwari</a
-          >
-        </p>
-      </div>
     </div>
-    <!-- Footer End -->
+    <div class="container border-top border-secondary pt-5">
+      <p class="m-0 text-center text-white">
+        &copy;2025 <a class="text-white font-weight-bold" href="#">VV Interiors | VV Infra |
+          vvinteriorsandinfraprojects</a>.
+        All Rights Reserved. | <i class="fa fa-phone-alt"></i> 8104494899 | Designed by
+        <a class="text-white font-weight-bold" href="#">Rijul Tiwari</a>
+      </p>
+    </div>
+  </div>
+  <!-- Footer End -->
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary back-to-top"
-      ><i class="fa fa-angle-double-up"></i
-    ></a>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+  <!-- Contact Javascript File -->
+  <script src="mail/jqBootstrapValidation.min.js"></script>
+  <script src="mail/contact.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script src="js/whatsapp-component.js"></script>
-    <script src="js/contact-cta.js"></script>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+  <script src="js/whatsapp-component.js"></script>
+  <script src="js/contact-cta.js"></script>
 
-    <!-- Page-Specific Event Tracking -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Get current page information
-        const currentPage = window.location.pathname;
-        const pageTitle = document.title;
-        
-        // Track page load time
-        const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
-        
-        // Send page-specific event
-        gtag('event', 'page_loaded', {
-          'event_category': 'Page Tracking',
-          'event_label': pageTitle,
-          'page_path': currentPage,
-          'page_type': getPageType(),
-          'load_time': Math.round(loadTime),
+  <!-- Page-Specific Event Tracking -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get current page information
+      const currentPage = window.location.pathname;
+      const pageTitle = document.title;
+
+      // Track page load time
+      const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
+
+      // Send page-specific event
+      gtag('event', 'page_loaded', {
+        'event_category': 'Page Tracking',
+        'event_label': pageTitle,
+        'page_path': currentPage,
+        'page_type': getPageType(),
+        'load_time': Math.round(loadTime),
+        'value': 1
+      });
+
+      // Track About Page specifically
+      if (currentPage.includes('about')) {
+        gtag('event', 'about_page_view', {
+          'event_category': 'About',
+          'event_label': 'About Page Viewed',
           'value': 1
         });
+      }
+    });
+  </script>
 
-        // Track About Page specifically
-        if (currentPage.includes('about')) {
-          gtag('event', 'about_page_view', {
-            'event_category': 'About',
-            'event_label': 'About Page Viewed',
+  <!-- User Interaction Tracking - All Pages -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const currentPage = window.location.pathname;
+
+      // 1. Track WhatsApp Button Clicks
+      const whatsappLinks = document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"]');
+      whatsappLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          gtag('event', 'whatsapp_click', {
+            'event_category': 'Contact',
+            'event_label': 'WhatsApp Click - ' + currentPage,
+            'page_path': currentPage,
+            'page_type': getPageType(),
             'value': 1
           });
-        }
+        });
       });
-    </script>
 
-    <!-- User Interaction Tracking - All Pages -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const currentPage = window.location.pathname;
-        
-        // 1. Track WhatsApp Button Clicks
-        const whatsappLinks = document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"]');
-        whatsappLinks.forEach(function(link) {
-          link.addEventListener('click', function() {
-            gtag('event', 'whatsapp_click', {
-              'event_category': 'Contact',
-              'event_label': 'WhatsApp Click - ' + currentPage,
-              'page_path': currentPage,
-              'page_type': getPageType(),
-              'value': 1
-            });
-          });
-        });
-
-        // 2. Track Phone Number Clicks
-        const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        phoneLinks.forEach(function(link) {
-          link.addEventListener('click', function() {
-            gtag('event', 'phone_click', {
-              'event_category': 'Contact',
-              'event_label': 'Phone Click - ' + currentPage,
-              'page_path': currentPage,
-              'page_type': getPageType(),
-              'value': 1
-            });
-          });
-        });
-
-        // 3. Track Email Clicks
-        const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
-        emailLinks.forEach(function(link) {
-          link.addEventListener('click', function() {
-            gtag('event', 'email_click', {
-              'event_category': 'Contact',
-              'event_label': 'Email Click - ' + currentPage,
-              'page_path': currentPage,
-              'page_type': getPageType(),
-              'value': 1
-            });
-          });
-        });
-
-        // 4. Track CTA Button Clicks (View More, Explore, etc.)
-        const ctaButtons = document.querySelectorAll('a.btn-primary, a[href*="service"], a[href*="contact"], a[href*="project"], .btn-primary');
-        ctaButtons.forEach(function(button) {
-          button.addEventListener('click', function() {
-            const buttonText = button.textContent.trim().substring(0, 50);
-            gtag('event', 'cta_click', {
-              'event_category': 'Engagement',
-              'event_label': buttonText + ' - ' + currentPage,
-              'page_path': currentPage,
-              'page_type': getPageType(),
-              'value': 1
-            });
-          });
-        });
-
-        // 5. Track Portfolio Image Clicks
-        const portfolioImages = document.querySelectorAll('.portfolio-item img, .portfolio-img img, .portfolio-item');
-        portfolioImages.forEach(function(item) {
-          item.addEventListener('click', function() {
-            const imageAlt = item.alt || item.querySelector('img')?.alt || 'Portfolio Image';
-            gtag('event', 'portfolio_image_click', {
-              'event_category': 'Portfolio',
-              'event_label': imageAlt.substring(0, 50),
-              'page_path': currentPage,
-              'page_type': getPageType(),
-              'value': 1
-            });
-          });
-        });
-
-        // 6. Track Scroll Depth (Engagement Metric)
-        let maxScroll = 0;
-        const scrollThresholds = [25, 50, 75, 90, 100];
-        
-        window.addEventListener('scroll', function() {
-          const scrollPercent = Math.round(
-            (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100
-          );
-          
-          scrollThresholds.forEach(function(threshold) {
-            if (scrollPercent >= threshold && maxScroll < threshold) {
-              maxScroll = threshold;
-              gtag('event', 'scroll_depth', {
-                'event_category': 'Engagement',
-                'event_label': threshold + '% - ' + currentPage,
-                'scroll_percent': threshold,
-                'page_path': currentPage,
-                'page_type': getPageType(),
-                'value': threshold
-              });
-            }
-          });
-        });
-
-        // 7. Track Time on Page
-        const timeIntervals = [10, 30, 60, 120, 300]; // seconds
-        timeIntervals.forEach(function(seconds) {
-          setTimeout(function() {
-            gtag('event', 'time_on_page', {
-              'event_category': 'Engagement',
-              'event_label': seconds + ' seconds - ' + currentPage,
-              'time_seconds': seconds,
-              'page_path': currentPage,
-              'page_type': getPageType(),
-              'value': seconds
-            });
-          }, seconds * 1000);
-        });
-
-        // 8. Track Navigation Clicks (Internal Links)
-        const navLinks = document.querySelectorAll('nav a, .navbar a, .nav-link');
-        navLinks.forEach(function(link) {
-          link.addEventListener('click', function() {
-            const linkText = link.textContent.trim();
-            const linkHref = link.getAttribute('href');
-            gtag('event', 'navigation_click', {
-              'event_category': 'Navigation',
-              'event_label': linkText + ' - From ' + currentPage,
-              'link_destination': linkHref,
-              'page_path': currentPage,
-              'page_type': getPageType(),
-              'value': 1
-            });
+      // 2. Track Phone Number Clicks
+      const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+      phoneLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          gtag('event', 'phone_click', {
+            'event_category': 'Contact',
+            'event_label': 'Phone Click - ' + currentPage,
+            'page_path': currentPage,
+            'page_type': getPageType(),
+            'value': 1
           });
         });
       });
-    </script>
-  </body>
+
+      // 3. Track Email Clicks
+      const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+      emailLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          gtag('event', 'email_click', {
+            'event_category': 'Contact',
+            'event_label': 'Email Click - ' + currentPage,
+            'page_path': currentPage,
+            'page_type': getPageType(),
+            'value': 1
+          });
+        });
+      });
+
+      // 4. Track CTA Button Clicks (View More, Explore, etc.)
+      const ctaButtons = document.querySelectorAll('a.btn-primary, a[href*="service"], a[href*="contact"], a[href*="project"], .btn-primary');
+      ctaButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          const buttonText = button.textContent.trim().substring(0, 50);
+          gtag('event', 'cta_click', {
+            'event_category': 'Engagement',
+            'event_label': buttonText + ' - ' + currentPage,
+            'page_path': currentPage,
+            'page_type': getPageType(),
+            'value': 1
+          });
+        });
+      });
+
+      // 5. Track Portfolio Image Clicks
+      const portfolioImages = document.querySelectorAll('.portfolio-item img, .portfolio-img img, .portfolio-item');
+      portfolioImages.forEach(function (item) {
+        item.addEventListener('click', function () {
+          const imageAlt = item.alt || item.querySelector('img')?.alt || 'Portfolio Image';
+          gtag('event', 'portfolio_image_click', {
+            'event_category': 'Portfolio',
+            'event_label': imageAlt.substring(0, 50),
+            'page_path': currentPage,
+            'page_type': getPageType(),
+            'value': 1
+          });
+        });
+      });
+
+      // 6. Track Scroll Depth (Engagement Metric)
+      let maxScroll = 0;
+      const scrollThresholds = [25, 50, 75, 90, 100];
+
+      window.addEventListener('scroll', function () {
+        const scrollPercent = Math.round(
+          (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100
+        );
+
+        scrollThresholds.forEach(function (threshold) {
+          if (scrollPercent >= threshold && maxScroll < threshold) {
+            maxScroll = threshold;
+            gtag('event', 'scroll_depth', {
+              'event_category': 'Engagement',
+              'event_label': threshold + '% - ' + currentPage,
+              'scroll_percent': threshold,
+              'page_path': currentPage,
+              'page_type': getPageType(),
+              'value': threshold
+            });
+          }
+        });
+      });
+
+      // 7. Track Time on Page
+      const timeIntervals = [10, 30, 60, 120, 300]; // seconds
+      timeIntervals.forEach(function (seconds) {
+        setTimeout(function () {
+          gtag('event', 'time_on_page', {
+            'event_category': 'Engagement',
+            'event_label': seconds + ' seconds - ' + currentPage,
+            'time_seconds': seconds,
+            'page_path': currentPage,
+            'page_type': getPageType(),
+            'value': seconds
+          });
+        }, seconds * 1000);
+      });
+
+      // 8. Track Navigation Clicks (Internal Links)
+      const navLinks = document.querySelectorAll('nav a, .navbar a, .nav-link');
+      navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          const linkText = link.textContent.trim();
+          const linkHref = link.getAttribute('href');
+          gtag('event', 'navigation_click', {
+            'event_category': 'Navigation',
+            'event_label': linkText + ' - From ' + currentPage,
+            'link_destination': linkHref,
+            'page_path': currentPage,
+            'page_type': getPageType(),
+            'value': 1
+          });
+        });
+      });
+    });
+  </script>
+</body>
+
 </html>

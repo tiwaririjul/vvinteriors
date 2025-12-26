@@ -1,4 +1,4 @@
-# robots.txt for vvinteriorsandinfraprojects.com
+# robots.txt for vv-interiors.in
 # This file tells search engines which pages they can and cannot crawl
 
 # Allow all search engines to crawl all pages
@@ -6,7 +6,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location - tells search engines where to find your sitemap
-Sitemap: https://vvinteriorsandinfraprojects.com/sitemap.xml
+Sitemap: https://vv-interiors.in/sitemap.xml
 
 # Disallow admin and private directories (if they exist)
 Disallow: /admin/
@@ -31,5 +31,8 @@ Allow: /single.html
 # Crawl delay (optional) - tells bots to wait 1 second between requests
 # This prevents overloading your server
 Crawl-delay: 1
+
+
+
 
 
